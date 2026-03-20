@@ -6,11 +6,21 @@
 
 const screen = document.getElementById("calcScreen"); 
 
+const numberButtons = document.getElementById("numButtons");
+
+
 // Grab all buttons with class "num" using querySelectorAll
+const numClass = document.querySelectorAll("num");
 // Grab all buttons with class "sign" using querySelectorAll
+const signClass = document.querySelectorAll("sign");
 // Grab the ONE element with class "signEqual" using querySelector
+const signEqual = document.querySelector("signEqual");
 // Grab the element with id "clearButton"
+
 // Grab the element with id "deleteButton"
+
+const clearButton = document.getElementById("clearButtons");
+const deleteButton = document.getElementById("deleteButton");
    
    
 /*
@@ -36,6 +46,8 @@ let currentOperator = null;
    
 function updateScreen() {
 // set the screen's text to show whatever currentValue is 
+  screen.textContent = currentValue;
+
 }
    
    
